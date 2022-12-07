@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Circular Id</th>
+            <th>Information Text </th>
+            <th>Notification Posted By</th>
+            <th>Notification Date</th>
+            <th>Acknowledge</th>
+            <th>Acknowledge Date </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let circular of cir">
+            <td>{{circular.circularId}}</td>
+            <td>{{circular.informText}}</td>
+            <td>{{circular.postedBy}}</td>
+            <td>{{circular.notifyDate}}</td>
+            <td ><button type="button" [disabled]="circular.acknowledgeDate.toString() !==''" (click)="acknowledge(circular.circularId)">acknowledge</button></td>
+            <td>{{circular.acknowledgeDate}}</td>
+        </tr>
+    </tbody>
+</table>

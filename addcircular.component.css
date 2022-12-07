@@ -1,0 +1,85 @@
+.circular-bg{
+    background-image: url("/assets/images/circularimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    padding: 29px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .col {
+    flex: 100%;
+  }
+  
+  .card {
+    margin: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    padding: 25px;
+    background-color: #ced4dac4;
+    
+  }
+  
+  .card-body {
+    padding: 1rem 1rem;
+  }
+  
+  .card-header {
+    background-color:#5d9da5ce;
+    border: 1px groove rgba(15, 15, 15, 0.125);
+  }
+  
+  .center {
+    color: rgb(15, 15, 15);
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 6px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  
+  .group {
+    margin: 1rem;
+  }
+  
+  label {
+    font-size: 20px;
+  }
+  
+  button {
+    color: #fff;
+    padding: 14px 110px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+  span{
+    color: red;
+    font-weight: bold;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .btnGreen {
+    background-color: #28a745;
+    
+   
+  }
+  
+  .btnBlue {
+    background-color: #1997c9;
+    
+    
+  }

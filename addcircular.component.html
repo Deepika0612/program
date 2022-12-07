@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<div class="container circular-bg">
+    <div class="container">
+      <div class="row">
+          <div class="col"></div>
+          <div class="col">
+              <div class="card">
+                  <div class="card-header">
+                      <h3 class="center">ADD CIRCULAR</h3>
+                  </div>
+                  <div class="card-body">
+                      <form (ngSubmit)="onSubmit()" [formGroup]="cirForm">
+                          <div class="group">
+                              <label>Information Text :</label>
+                              <input type="text" autocomplete="off" name="informText" formControlName="informText" />
+                              <span *ngIf="check('informText')">Information Text is required</span>
+                          </div>
+                          <div class="group">
+                              <label>Posted By :</label>
+                              <input type="text" autocomplete="off" name="postedBy" formControlName="postedBy" />
+                              <span *ngIf="check('postedBy')">Posted By is required</span>
+                              <span *ngIf="checkLength('postedBy')">*Name must be atleast 3 to 20 Character</span>
+                              <span *ngIf="cirForm.get('postedBy')?.errors?.['pattern']">*Name should contain only alphabets and space</span>           
+                          </div>
+                          <br />
+                          <div>
+                          </div>
+                          <div class="center">
+                              <button type="submit" class="btnGreen">Submit</button>
+                              <button type="reset" (click)="resetBtn()" class="btnBlue">Reset</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="col"></div>
+      </div>
+    </div>
+    </div>    
